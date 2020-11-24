@@ -34,16 +34,13 @@
     },
     computed: {
       isActive() {
-        return this.$route.path.includes('/mart/' + this.link);
+        return this.$route.path.includes(this.link);
       }
     },
     methods: {
       itemClick() {
-        console.log('... itemClick');
-        if (!this.$route.path.includes('/mart/' + this.link)) {
-          this.$router.push('/mart/' + this.link);
-        } else {
-          console.log('相同的路由不跳转');
+        if (!this.$route.path.includes(this.link)) {
+          this.$router.push(this.link);
         }
       },
       textStyle() {

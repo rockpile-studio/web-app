@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 
 const Home = () => import('../views/Home/Home')
 const Profile = () => import('../views/Profile/Profile')
+const Draggable = () => import('../views/Draggable/Draggable')
 
 const routes = [
   {
@@ -14,6 +15,7 @@ const routes = [
   },
   {path: '/home', meta: {title: '首页'}, component: Home},
   {path: '/profile', meta: {title: '个人中心'}, component: Profile},
+  {path: '/draggable', meta: {title: '拖拽示例'}, component: Draggable},
 ]
 
 const router = new VueRouter({

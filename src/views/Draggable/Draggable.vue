@@ -25,7 +25,18 @@
           @start="dragging = true"
           @end="dragging = false">
           <div class="drag-layout-element" v-for="(component, index) in formComponents" :key="component.id">
-            {{ component.label_name }}
+            <div v-if="component.type=== 'input'">
+              {{ component.label_name }}
+              <el-input v-model="component.value" placeholder="请输入内容"/>
+            </div>
+            <div v-if="component.type=== 'selection'">
+              {{ component.label_name }}
+              <el-input v-model="component.value" placeholder="请输入内容"/>
+            </div>
+            <div v-if="component.type=== 'table'">
+              {{ component.label_name }}
+              <el-input v-model="component.value" placeholder="请输入内容"/>
+            </div>
           </div>
         </draggable>
       </el-main>
@@ -86,14 +97,14 @@
         },
         dragging: false,
         componentsDef: [
-          {id: 5030001, label_name: '单行文本', code: '', type: 'input'},
-          {id: 5030002, label_name: '下拉框', code: '', type: 'selection'},
-          {id: 5030003, label_name: '表格', code: '', type: 'table'},
+          {id: 5030001, label_name: '单行文本', code: '', type: 'input', value: ''},
+          {id: 5030002, label_name: '下拉框', code: '', type: 'selection', value: ''},
+          {id: 5030003, label_name: '表格', code: '', type: 'table', value: ''},
         ],
         formComponents: [
-          {id: 5030101, label_name: '单行文本', code: '', type: 'input'},
-          {id: 5030102, label_name: '下拉框', code: '', type: 'selection'},
-          {id: 5030103, label_name: '表格', code: '', type: 'table'},
+          {id: 5030101, label_name: '单行文本', code: '', type: 'input', value: ''},
+          {id: 5030102, label_name: '下拉框', code: '', type: 'selection', value: ''},
+          {id: 5030103, label_name: '表格', code: '', type: 'table', value: ''},
         ]
       }
     },

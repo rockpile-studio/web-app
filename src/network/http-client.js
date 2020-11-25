@@ -1,8 +1,9 @@
 import axios from "axios";
+import {baseUrl} from "../common/env";
 
 export function httpClient(config) {
   const axiosInstance = axios.create({
-    baseURL: 'http://127.0.0.1:5030',
+    baseURL: baseUrl,
     timeout: 5000,
   })
 

@@ -9,10 +9,10 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    userInfo: {},
   },
   mutations,
   actions,
   getters,
-  modules: {
-  }
+  modules: {}
 })

@@ -51,7 +51,7 @@
 </template>
 
 <script>
-  import {uuid} from '@/common/uuid-utils';
+  import { v4 as uuidv4 } from 'uuid';
 
   export default {
     name: "Home",
@@ -77,7 +77,7 @@
       sendToParent() {
         console.log('window', window);
         const data = {
-          detailId: uuid(),
+          detailId: uuidv4(),
           code: 530200,
           message: '父子页面跨域通信成功',
           content: {

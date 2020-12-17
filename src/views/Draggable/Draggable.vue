@@ -52,8 +52,7 @@
   // npm install vuedraggable --save
   // npm install sortablejs --save
   import draggable from 'vuedraggable';
-  // 可以通过"/src/"开头，自动提示路径
-  import {uuid} from '@/common/uuid-utils';
+  import { v4 as uuidv4 } from 'uuid';
 
   export default {
     name: "Draggable",
@@ -86,7 +85,7 @@
         layoutDragOptions: {
           group: {
             name: "draggable-demo",
-            pull: 'false',
+            pull: false,
             put: true,
             revertClone: true
           },
@@ -116,7 +115,7 @@
       cloneComponent(origin) {
         console.log('origin component', origin);
         const instance = JSON.parse(JSON.stringify(origin));
-        instance.id = uuid();
+        instance.id = uuidv4();
         return instance;
       }
     }

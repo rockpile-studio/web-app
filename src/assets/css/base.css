@@ -84,3 +84,11 @@ ol, ul {
 .node-endpoint-dot {
   margin-right: 50px;
 }
+
+.jtk-endpoint {
+  z-index: 11;
+}
+
+.jtk-endpoint:not(.jtk-drag-active) {
+  margin-left: 50px;
+}

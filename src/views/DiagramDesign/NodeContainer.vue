@@ -82,7 +82,7 @@
     border-radius: 5px;
     background: #eef3f7;
     text-align: center;
-    /*z-index: 10;*/
+    z-index: 10;
   }
 
   .node-left {

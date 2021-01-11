@@ -3,12 +3,12 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const IndexPage  = () => import('../views/index')
+const IndexPage = () => import('../views/index')
 const DiagramDesign = () => import('../views/DiagramDesign/DiagramDesign')
 const Home = () => import('../views/Home/Home')
 const Profile = () => import('../views/Profile/Profile')
 const Draggable = () => import('../views/Draggable/Draggable')
-
+const DataCube = () => import('../views/DataCube/DataCube')
 
 const routes = [
   {
@@ -21,7 +21,8 @@ const routes = [
   {path: '/home', meta: {title: '首页'}, component: Home},
   {path: '/profile', meta: {title: '个人中心'}, component: Profile},
   {path: '/draggable', meta: {title: '拖拽示例'}, component: Draggable},
-  {path: '/diagram-design', meta: {title: '可视化设计'}, component: DiagramDesign}
+  {path: '/diagram-design', meta: {title: '可视化设计'}, component: DiagramDesign},
+  {path: '/data-cube', meta: {title: '数据立方体'}, component: DataCube}
 ]
 
 const router = new VueRouter({

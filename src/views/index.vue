@@ -31,7 +31,8 @@
             name: '产品模块',
             link: '/module',
             subtitles: [
-              {name: '新建流程服务', link: '/diagram-design', hot: true},
+              {name: 'DAG有向图设计器', link: '/diagram-design', hot: true},
+              {name: '多维立方体模型', link: '/data-cube', hot: true},
               {name: '拖拽服务', link: '/draggable', hot: false},
             ],
           },

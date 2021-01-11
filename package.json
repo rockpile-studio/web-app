@@ -12,6 +12,10 @@
     "element-ui": "^2.14.1",
     "jsplumb": "^2.13.0",
     "sortablejs": "^1.12.0",
+    "three": "^0.124.0",
+    "three-css2drender": "^1.0.0",
+    "three-obj-mtl-loader": "^1.0.3",
+    "three-orbit-controls": "^82.1.0",
     "uuid": "^8.3.2",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -21,6 +25,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-service": "^4.5.0",
+    "three": "^0.124.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
